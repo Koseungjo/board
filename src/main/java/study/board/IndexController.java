@@ -5,12 +5,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class IndexController {
-
-    @GetMapping("/header")
-    public String header(){
-        return "/header";
-    }
-
     @GetMapping("/main")
     public String main(){
         return "/main";
