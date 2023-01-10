@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+
+    <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+</head>
+<body>
+<header>
+    <div th:replace="header :: header"></div>
+</header>
+<aside>
+    <div th:replace="sidebar :: sidebarFragment"></div>
+</aside>
+<div class="container">
+    <div id="board_write">
+        <div id="write_area">
+                <div id="in_title">
+                    <span id="title"></span>
+                </div>
+
+                <div class="wi_line"></div>
+                <div id="in_content">
+                    <div class="mb-3">
+                        <span id="content"></span>
+                    </div>
+                </div>
+
+                <div class="bt_se">
+                    <a href="/update">글 수정</a>
+                    <a href="/main">글 목록</a>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
